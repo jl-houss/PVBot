@@ -18,11 +18,11 @@ if (!fs.readdirSync(".").includes("main.db")) {
                 "id"	        INTEGER NOT NULL UNIQUE,
                 "username"	    TEXT NOT NULL UNIQUE,
                 "password"	    TEXT NOT NULL,
-                "elevagePVId"	INTEGER NOT NULL UNIQUE,
+                "elevagePVId"	INTEGER UNIQUE,
                 "elevageFId"	INTEGER UNIQUE,
                 "elevageMId"	INTEGER UNIQUE,
-                "affixeId"	    INTEGER NOT NULL UNIQUE,
-                "elevageOldId"	INTEGER,
+                "affixeId"	    INTEGER UNIQUE,
+                "elevageOldId"	INTEGER UNIQUE,
                 PRIMARY KEY("id" AUTOINCREMENT)
             );`).run()
     })()

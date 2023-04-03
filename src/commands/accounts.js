@@ -226,8 +226,7 @@ module.exports = {
                 .addIntegerOption(option =>
                     option
                         .setName('pv-id')
-                        .setDescription("L'identifiant de l'elevage de PV a utiliser")
-                        .setRequired(true))
+                        .setDescription("L'identifiant de l'elevage de PV a utiliser"))
                 .addIntegerOption(option =>
                     option
                         .setName('affixe-id')
